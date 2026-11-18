@@ -1,0 +1,26 @@
+# Quick mode: every algorithm and three of the GA ablations, with budgets small enough to
+# finish in under ten minutes on a laptop. Budgets are far below the main suite's, so the
+# numbers show that the pipeline works and what learns fastest, not final performance.
+#
+#   make quick
+suite: quick
+seeds: [0, 1, 2]
+budget_steps: 3000000        # environment steps = game ticks summed over all episodes
+eval:
+  k_seeds: 3                 # seeds per fitness evaluation
+  max_ticks: 12000           # training episodes stop here (a score ceiling of 3,287)
+  jump_penalty: 0.0          # reward shaping, off
+test:
+  max_ticks: 36000           # unseen seeds are played to the game's full length
+  n_seeds: 20                # the main suite uses 100
+runs:
+  - {id: ga,          algorithm: ga}
+  - {id: cmaes,       algorithm: cmaes}
+  - {id: neat,        algorithm: neat}
+  - {id: ppo,         algorithm: ppo, budget_steps: 500000}
+  - {id: rule_fixed,  algorithm: rule_fixed}
+  - {id: rule_scaled, algorithm: rule_scaled}
+  # three of the GA ablations, to exercise that path
+  - {id: ga-pop50,    algorithm: ga, params: {pop_size: 50}}
+  - {id: ga-noelite,  algorithm: ga, params: {elite_count: 0}}
+  - {id: ga-k1,       algorithm: ga, eval: {k_seeds: 1}}

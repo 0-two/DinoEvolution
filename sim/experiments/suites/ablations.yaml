@@ -1,0 +1,21 @@
+# Ablations on the genetic algorithm, one factor at a time against `ga-default`.
+# Population size, mutation strength, elitism, and the number of evaluation seeds K.
+suite: ablations
+seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+budget_steps: 20000000
+eval:
+  k_seeds: 3
+  max_ticks: 12000
+  jump_penalty: 0.0
+test:
+  max_ticks: 36000
+  n_seeds: 100
+runs:
+  - {id: ga-default,    algorithm: ga}
+  - {id: ga-pop50,      algorithm: ga, params: {pop_size: 50}}
+  - {id: ga-pop300,     algorithm: ga, params: {pop_size: 300}}
+  - {id: ga-sigma0_1,   algorithm: ga, params: {mutation_sigma: 0.1}}
+  - {id: ga-sigma0_6,   algorithm: ga, params: {mutation_sigma: 0.6}}
+  - {id: ga-noelite,    algorithm: ga, params: {elite_count: 0}}
+  - {id: ga-k1,         algorithm: ga, eval: {k_seeds: 1}}
+  - {id: ga-k5,         algorithm: ga, eval: {k_seeds: 5}}

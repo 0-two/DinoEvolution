@@ -1,0 +1,27 @@
+# Main comparison: each algorithm on ten independent seeds, the same fitness definition, a
+# budget counted in environment steps. Run with `make experiments`.
+#
+# Training episodes are capped at 12,000 ticks (a score ceiling of 3,287) to bound the cost of
+# one generation once agents survive to the cap; at the game's full 36,000 ticks a generation of
+# 150 competent genomes would cost 16 million steps. Final genomes are tested on 100 unseen seeds
+# at the full 36,000 ticks.
+#
+# PPO gets a smaller budget than the evolutionary methods because it simulates about 30 times
+# fewer steps per second. The curves can be compared over the range both cover.
+suite: main
+seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+budget_steps: 20000000
+eval:
+  k_seeds: 3
+  max_ticks: 12000
+  jump_penalty: 0.0
+test:
+  max_ticks: 36000
+  n_seeds: 100
+runs:
+  - {id: ga,          algorithm: ga}
+  - {id: cmaes,       algorithm: cmaes}
+  - {id: neat,        algorithm: neat}
+  - {id: ppo,         algorithm: ppo, budget_steps: 5000000}
+  - {id: rule_fixed,  algorithm: rule_fixed}
+  - {id: rule_scaled, algorithm: rule_scaled}

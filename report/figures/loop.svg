@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="fig" viewBox="0 0 720 250" width="720" height="250" role="img" aria-labelledby="t d"><title id="t">The evolutionary loop</title><desc id="d">Four steps repeated every generation: evaluate each genome on several seeds, select parents, cross them over, mutate the children.</desc><style>
+svg.fig { --f-paper: #F3F1EC; --f-ink: #161616; --f-ink2: #6B6862; --f-rule: #D9D5CC; --f-accent: #D9480F; }
+svg.fig .f-bg { fill: var(--f-paper); }
+svg.fig text { font-family: "IBM Plex Mono", ui-monospace, Consolas, monospace; font-size: 11px; fill: var(--f-ink2); }
+svg.fig .f-title { font-size: 13px; fill: var(--f-ink); }
+svg.fig .f-label { letter-spacing: 0.08em; text-transform: uppercase; }
+svg.fig .f-end { font-size: 12px; fill: var(--f-ink); }
+svg.fig .f-note { fill: var(--f-ink2); }
+svg.fig .f-grid { stroke: var(--f-rule); stroke-width: 1; fill: none; }
+svg.fig .f-axis { stroke: var(--c, var(--f-ink2)); stroke-width: 1; fill: none; pointer-events: none; }
+svg.fig .f-line { fill: none; stroke: var(--c, var(--f-ink)); stroke-width: 1.5; stroke-linejoin: round; }
+svg.fig .f-band { fill: var(--c, var(--f-ink)); stroke: none; opacity: 0.16; }
+svg.fig .f-dot { fill: var(--c, var(--f-ink)); stroke: none; }
+svg.fig .f-ring { fill: none; stroke: var(--c, var(--f-ink)); stroke-width: 1.25; pointer-events: all; }
+svg.fig .f-ref { stroke: var(--f-ink2); stroke-width: 1; stroke-dasharray: 2 3; fill: none; }
+svg.fig .s-ga { --c: var(--f-accent); }
+svg.fig .s-cmaes, svg.fig .s-neat, svg.fig .s-ink { --c: var(--f-ink); }
+svg.fig .s-ppo, svg.fig .s-rule_fixed, svg.fig .s-rule_scaled, svg.fig .s-ink2 { --c: var(--f-ink2); }
+svg.fig .s-accent { --c: var(--f-accent); }
+svg.fig .f-line.s-neat { stroke-dasharray: 6 3; }
+svg.fig .f-line.dash { stroke-dasharray: 6 3; }
+svg.fig .f-line.s-rule_fixed { stroke-dasharray: 2 3; stroke-width: 1; }
+svg.fig .f-line.s-rule_scaled { stroke-dasharray: 8 3 2 3; stroke-width: 1; }
+svg.fig .f-box { fill: none; stroke: var(--f-ink2); stroke-width: 1; }
+svg.fig .f-arrow { fill: var(--f-ink2); stroke: none; }
+svg.fig .f-cell-on { fill: var(--f-ink); }
+svg.fig .f-cell-duck { fill: var(--f-accent); }
+svg.fig .f-cell-off { fill: var(--f-rule); opacity: 0.55; }
+svg.fig .f-dim { opacity: 0.12; }
+svg.fig [data-series] { cursor: pointer; }
+svg.fig .f-hit { fill: transparent; stroke: none; }
+</style><rect class="f-bg" width="720" height="250"/><text x="16.00" y="22.00" text-anchor="start" class="f-title" >One generation: 150 genomes of 96 weights</text><rect x="16.00" y="58.00" width="150.00" height="78.00" class="f-box" /><text x="26.00" y="82.00" text-anchor="start" class="f-end" >1  Evaluate</text><text x="26.00" y="104.00" text-anchor="start" class="f-note" >play 3 seeds,</text><text x="26.00" y="119.00" text-anchor="start" class="f-note" >fitness = mean score</text><line x1="166.00" y1="97.00" x2="189.00" y2="97.00" class="f-axis" /><path d="M196.00 97.00 L188.00 93.00 L188.00 101.00 Z" class="f-arrow" /><rect x="196.00" y="58.00" width="150.00" height="78.00" class="f-box" /><text x="206.00" y="82.00" text-anchor="start" class="f-end" >2  Select</text><text x="206.00" y="104.00" text-anchor="start" class="f-note" >tournament of 3,</text><text x="206.00" y="119.00" text-anchor="start" class="f-note" >8 elites kept</text><line x1="346.00" y1="97.00" x2="369.00" y2="97.00" class="f-axis" /><path d="M376.00 97.00 L368.00 93.00 L368.00 101.00 Z" class="f-arrow" /><rect x="376.00" y="58.00" width="150.00" height="78.00" class="f-box" /><text x="386.00" y="82.00" text-anchor="start" class="f-end" >3  Cross over</text><text x="386.00" y="104.00" text-anchor="start" class="f-note" >each weight from</text><text x="386.00" y="119.00" text-anchor="start" class="f-note" >either parent, p 0.8</text><line x1="526.00" y1="97.00" x2="549.00" y2="97.00" class="f-axis" /><path d="M556.00 97.00 L548.00 93.00 L548.00 101.00 Z" class="f-arrow" /><rect x="556.00" y="58.00" width="150.00" height="78.00" class="f-box" /><text x="566.00" y="82.00" text-anchor="start" class="f-end" >4  Mutate</text><text x="566.00" y="104.00" text-anchor="start" class="f-note" >weights: p 0.1,</text><text x="566.00" y="119.00" text-anchor="start" class="f-note" >gaussian sd 0.3</text><path d="M631.00 136.00 L631.00 170.00 L91.00 170.00 L91.00 143.00" class="f-axis" /><path d="M91.00 136.00 L87.00 144.00 L95.00 144.00 Z" class="f-arrow" /><text x="361.00" y="188.00" text-anchor="middle" class="f-note" >the children are the next generation</text><text x="16.00" y="236.00" text-anchor="start" class="f-note" >Fitness is the mean over seeds, so one lucky obstacle sequence cannot decide who breeds.</text></svg>

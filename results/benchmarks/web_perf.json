@@ -1,0 +1,73 @@
+{
+  "browser": "Edg/157.0.4341.60",
+  "rendering": "headless, software (--disable-gpu)",
+  "machine": {
+    "cpu": "AMD Ryzen 7 7735HS with Radeon Graphics        ",
+    "cores": 16,
+    "os": "win32 10.0.26200"
+  },
+  "seconds_per_case": 8,
+  "page_errors": [],
+  "results": [
+    {
+      "population": 150,
+      "speed": "1x",
+      "fps": 60.00225008437812,
+      "frame_ms": {
+        "p50": 16.699999999999818,
+        "p95": 16.700000000000728,
+        "p99": 16.800000000000182,
+        "max": 16.80000000000109
+      },
+      "simulation_rate": "1 × real time"
+    },
+    {
+      "population": 300,
+      "speed": "1x",
+      "fps": 60.003256961755675,
+      "frame_ms": {
+        "p50": 16.699999999999818,
+        "p95": 16.700000000000728,
+        "p99": 16.800000000000182,
+        "max": 16.800000000000182
+      },
+      "simulation_rate": "1 × real time"
+    },
+    {
+      "population": 300,
+      "speed": "4x",
+      "fps": 60.00250532381304,
+      "frame_ms": {
+        "p50": 16.699999999999818,
+        "p95": 16.700000000000728,
+        "p99": 16.800000000000182,
+        "max": 16.80000000000109
+      },
+      "simulation_rate": "4 × real time"
+    },
+    {
+      "population": 300,
+      "speed": "16x",
+      "fps": 60.003000150007445,
+      "frame_ms": {
+        "p50": 16.699999999999818,
+        "p95": 16.799999999999272,
+        "p99": 16.800000000000182,
+        "max": 16.800000000000182
+      },
+      "simulation_rate": "16 × real time"
+    },
+    {
+      "population": 300,
+      "speed": "max",
+      "fps": 60.0017537047011,
+      "frame_ms": {
+        "p50": 16.699999999999818,
+        "p95": 16.700000000000728,
+        "p99": 16.800000000000182,
+        "max": 16.80000000000109
+      },
+      "simulation_rate": "1,519 × real time"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+ "commit": "unknown",
+ "machine": {
+  "python": "3.11.16",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+  "implementation": "CPython"
+ },
+ "libraries": {
+  "numpy": "2.4.6",
+  "cma": "4.6.0",
+  "neat-python": "2.0.0",
+  "gymnasium": "1.4.0",
+  "stable-baselines3": "2.9.2",
+  "torch": "2.15.0+cpu",
+  "pyyaml": "6.0.3"
+ },
+ "wall_clock_s": 157.77657829999953,
+ "gap_coefficient": {
+  "0.6": {
+   "gap_coefficient": 0.6,
+   "tuned_d": 60.0,
+   "tuned_gain": 24.0,
+   "test_mean": 4867.1517644999385,
+   "test_median": 4182.624999999927,
+   "seeds_at_cap": 12,
+   "n_seeds": 100,
+   "max_possible": 11087.412499999928
+  },
+  "0.5": {
+   "gap_coefficient": 0.5,
+   "tuned_d": 60.0,
+   "tuned_gain": 24.0,
+   "test_mean": 3202.4945614999533,
+   "test_median": 2199.3124999999272,
+   "seeds_at_cap": 4,
+   "n_seeds": 100,
+   "max_possible": 11087.412499999928
+  }
+ },
+ "ppo_first_settings": {
+  "params": {
+   "learning_rate": 0.0003,
+   "gamma": 0.995,
+   "ent_coef": 0.01
+  },
+  "env_steps": [
+   100352,
+   200704,
+   301056,
+   401408,
+   501760
+  ],
+  "window_mean": [
+   32.93268733624475,
+   34.28248545354005,
+   33.7996913907287,
+   33.86755568432693,
+   34.35583923766839
+  ],
+  "window_best": [
+   77.79382500000104,
+   80.39602500000109,
+   81.86257500000113,
+   74.38815000000095,
+   85.45600000000124
+  ]
+ },
+ "ppo_final_settings": {
+  "params": {},
+  "env_steps": [
+   100352,
+   200704,
+   301056,
+   401408,
+   501760
+  ],
+  "window_mean": [
+   32.08994042553211,
+   43.46415747126482,
+   307.0485250000133,
+   407.1827327777932,
+   394.1389190000165
+  ],
+  "window_best": [
+   78.60632500000105,
+   252.35650000000942,
+   674.7588750000263,
+   1007.1301500000095,
+   845.0982750000205
+  ]
+ },
+ "neat_threshold": {
+  "3.0": {
+   "threshold": 3.0,
+   "generations": 21,
+   "species_min": 1,
+   "species_max": 1,
+   "species_last": 1,
+   "best_fitness": 657.5265583333561
+  },
+  "1.0": {
+   "threshold": 1.0,
+   "generations": 20,
+   "species_min": 1,
+   "species_max": 14,
+   "species_last": 14,
+   "best_fitness": 659.8431166666913
+  }
+ }
+}

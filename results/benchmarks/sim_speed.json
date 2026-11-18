@@ -1,0 +1,30 @@
+{
+  "commit": "unknown",
+  "machine": {
+    "python": "3.11.16",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+    "implementation": "CPython"
+  },
+  "episode_ticks": 36000,
+  "episodes_per_repeat": 20,
+  "repeats": 5,
+  "target_ticks_per_s": 50000,
+  "results": {
+    "step": {
+      "ticks_per_s_median": 1383661.190571853,
+      "ticks_per_s_best": 1415040.1075434792,
+      "ticks_per_s_worst": 1004748.9739352978
+    },
+    "step+observe": {
+      "ticks_per_s_median": 767132.6287081367,
+      "ticks_per_s_best": 773658.309939117,
+      "ticks_per_s_worst": 755987.4203690749
+    },
+    "step+rule": {
+      "ticks_per_s_median": 1088860.87760681,
+      "ticks_per_s_best": 1100177.9232186964,
+      "ticks_per_s_worst": 988064.9982085007
+    }
+  }
+}

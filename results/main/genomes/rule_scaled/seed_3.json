@@ -1,0 +1,13 @@
+{
+ "format": "dino-rule/1",
+ "d": 60.0,
+ "gain": 24.0,
+ "meta": {
+  "algorithm": "rule_scaled",
+  "seed": 3,
+  "tune_seeds": [
+   2000060,
+   2000079
+  ]
+ }
+}

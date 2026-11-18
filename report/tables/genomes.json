@@ -1,0 +1,422 @@
+[
+ {
+  "run_id": "cmaes",
+  "algorithm": "cmaes",
+  "seed": 0,
+  "test_mean": 2176.6294384999633,
+  "genome_file": "results/main/genomes/cmaes/seed_0.json"
+ },
+ {
+  "run_id": "cmaes",
+  "algorithm": "cmaes",
+  "seed": 1,
+  "test_mean": 5396.236494999929,
+  "genome_file": "results/main/genomes/cmaes/seed_1.json"
+ },
+ {
+  "run_id": "cmaes",
+  "algorithm": "cmaes",
+  "seed": 2,
+  "test_mean": 587.0910430000241,
+  "genome_file": "results/main/genomes/cmaes/seed_2.json"
+ },
+ {
+  "run_id": "cmaes",
+  "algorithm": "cmaes",
+  "seed": 3,
+  "test_mean": 587.0482355000241,
+  "genome_file": "results/main/genomes/cmaes/seed_3.json"
+ },
+ {
+  "run_id": "cmaes",
+  "algorithm": "cmaes",
+  "seed": 4,
+  "test_mean": 6757.391999999927,
+  "genome_file": "results/main/genomes/cmaes/seed_4.json"
+ },
+ {
+  "run_id": "cmaes",
+  "algorithm": "cmaes",
+  "seed": 5,
+  "test_mean": 587.0052957500242,
+  "genome_file": "results/main/genomes/cmaes/seed_5.json"
+ },
+ {
+  "run_id": "cmaes",
+  "algorithm": "cmaes",
+  "seed": 6,
+  "test_mean": 794.1597495000194,
+  "genome_file": "results/main/genomes/cmaes/seed_6.json"
+ },
+ {
+  "run_id": "cmaes",
+  "algorithm": "cmaes",
+  "seed": 7,
+  "test_mean": 3478.059852499941,
+  "genome_file": "results/main/genomes/cmaes/seed_7.json"
+ },
+ {
+  "run_id": "cmaes",
+  "algorithm": "cmaes",
+  "seed": 8,
+  "test_mean": 1348.352561499964,
+  "genome_file": "results/main/genomes/cmaes/seed_8.json"
+ },
+ {
+  "run_id": "cmaes",
+  "algorithm": "cmaes",
+  "seed": 9,
+  "test_mean": 810.9719512500151,
+  "genome_file": "results/main/genomes/cmaes/seed_9.json"
+ },
+ {
+  "run_id": "ga",
+  "algorithm": "ga",
+  "seed": 0,
+  "test_mean": 3713.4435627499415,
+  "genome_file": "results/main/genomes/ga/seed_0.json"
+ },
+ {
+  "run_id": "ga",
+  "algorithm": "ga",
+  "seed": 1,
+  "test_mean": 4218.320199499937,
+  "genome_file": "results/main/genomes/ga/seed_1.json"
+ },
+ {
+  "run_id": "ga",
+  "algorithm": "ga",
+  "seed": 2,
+  "test_mean": 4988.546431749954,
+  "genome_file": "results/main/genomes/ga/seed_2.json"
+ },
+ {
+  "run_id": "ga",
+  "algorithm": "ga",
+  "seed": 3,
+  "test_mean": 888.4828617500038,
+  "genome_file": "results/main/genomes/ga/seed_3.json"
+ },
+ {
+  "run_id": "ga",
+  "algorithm": "ga",
+  "seed": 4,
+  "test_mean": 6197.029675999964,
+  "genome_file": "results/main/genomes/ga/seed_4.json"
+ },
+ {
+  "run_id": "ga",
+  "algorithm": "ga",
+  "seed": 5,
+  "test_mean": 1237.929872250012,
+  "genome_file": "results/main/genomes/ga/seed_5.json"
+ },
+ {
+  "run_id": "ga",
+  "algorithm": "ga",
+  "seed": 6,
+  "test_mean": 1328.4969437499717,
+  "genome_file": "results/main/genomes/ga/seed_6.json"
+ },
+ {
+  "run_id": "ga",
+  "algorithm": "ga",
+  "seed": 7,
+  "test_mean": 10707.839000249929,
+  "genome_file": "results/main/genomes/ga/seed_7.json"
+ },
+ {
+  "run_id": "ga",
+  "algorithm": "ga",
+  "seed": 8,
+  "test_mean": 1209.4269312499823,
+  "genome_file": "results/main/genomes/ga/seed_8.json"
+ },
+ {
+  "run_id": "ga",
+  "algorithm": "ga",
+  "seed": 9,
+  "test_mean": 11087.412499999928,
+  "genome_file": "results/main/genomes/ga/seed_9.json"
+ },
+ {
+  "run_id": "neat",
+  "algorithm": "neat",
+  "seed": 0,
+  "test_mean": 11087.412499999928,
+  "genome_file": "results/main/genomes/neat/seed_0.json"
+ },
+ {
+  "run_id": "neat",
+  "algorithm": "neat",
+  "seed": 1,
+  "test_mean": 7159.971657499938,
+  "genome_file": "results/main/genomes/neat/seed_1.json"
+ },
+ {
+  "run_id": "neat",
+  "algorithm": "neat",
+  "seed": 2,
+  "test_mean": 11087.412499999928,
+  "genome_file": "results/main/genomes/neat/seed_2.json"
+ },
+ {
+  "run_id": "neat",
+  "algorithm": "neat",
+  "seed": 3,
+  "test_mean": 11087.412499999928,
+  "genome_file": "results/main/genomes/neat/seed_3.json"
+ },
+ {
+  "run_id": "neat",
+  "algorithm": "neat",
+  "seed": 4,
+  "test_mean": 4818.135920499935,
+  "genome_file": "results/main/genomes/neat/seed_4.json"
+ },
+ {
+  "run_id": "neat",
+  "algorithm": "neat",
+  "seed": 5,
+  "test_mean": 11087.412499999928,
+  "genome_file": "results/main/genomes/neat/seed_5.json"
+ },
+ {
+  "run_id": "neat",
+  "algorithm": "neat",
+  "seed": 6,
+  "test_mean": 7085.145467749938,
+  "genome_file": "results/main/genomes/neat/seed_6.json"
+ },
+ {
+  "run_id": "neat",
+  "algorithm": "neat",
+  "seed": 7,
+  "test_mean": 4456.739018249963,
+  "genome_file": "results/main/genomes/neat/seed_7.json"
+ },
+ {
+  "run_id": "neat",
+  "algorithm": "neat",
+  "seed": 8,
+  "test_mean": 4606.648184499946,
+  "genome_file": "results/main/genomes/neat/seed_8.json"
+ },
+ {
+  "run_id": "neat",
+  "algorithm": "neat",
+  "seed": 9,
+  "test_mean": 7857.660569249955,
+  "genome_file": "results/main/genomes/neat/seed_9.json"
+ },
+ {
+  "run_id": "ppo",
+  "algorithm": "ppo",
+  "seed": 0,
+  "test_mean": 586.8204140000241,
+  "genome_file": "results/main/genomes/ppo/seed_0.json"
+ },
+ {
+  "run_id": "ppo",
+  "algorithm": "ppo",
+  "seed": 1,
+  "test_mean": 826.3343160000207,
+  "genome_file": "results/main/genomes/ppo/seed_1.json"
+ },
+ {
+  "run_id": "ppo",
+  "algorithm": "ppo",
+  "seed": 2,
+  "test_mean": 2106.8838402499723,
+  "genome_file": "results/main/genomes/ppo/seed_2.json"
+ },
+ {
+  "run_id": "ppo",
+  "algorithm": "ppo",
+  "seed": 3,
+  "test_mean": 579.5025377500248,
+  "genome_file": "results/main/genomes/ppo/seed_3.json"
+ },
+ {
+  "run_id": "ppo",
+  "algorithm": "ppo",
+  "seed": 4,
+  "test_mean": 765.565602750017,
+  "genome_file": "results/main/genomes/ppo/seed_4.json"
+ },
+ {
+  "run_id": "ppo",
+  "algorithm": "ppo",
+  "seed": 5,
+  "test_mean": 9701.87808824994,
+  "genome_file": "results/main/genomes/ppo/seed_5.json"
+ },
+ {
+  "run_id": "ppo",
+  "algorithm": "ppo",
+  "seed": 6,
+  "test_mean": 519.2907417500218,
+  "genome_file": "results/main/genomes/ppo/seed_6.json"
+ },
+ {
+  "run_id": "ppo",
+  "algorithm": "ppo",
+  "seed": 7,
+  "test_mean": 2496.2714692499703,
+  "genome_file": "results/main/genomes/ppo/seed_7.json"
+ },
+ {
+  "run_id": "ppo",
+  "algorithm": "ppo",
+  "seed": 8,
+  "test_mean": 3364.744845249927,
+  "genome_file": "results/main/genomes/ppo/seed_8.json"
+ },
+ {
+  "run_id": "ppo",
+  "algorithm": "ppo",
+  "seed": 9,
+  "test_mean": 10868.715335499928,
+  "genome_file": "results/main/genomes/ppo/seed_9.json"
+ },
+ {
+  "run_id": "rule_fixed",
+  "algorithm": "rule_fixed",
+  "seed": 0,
+  "test_mean": 711.7468772500138,
+  "genome_file": "results/main/genomes/rule_fixed/seed_0.json"
+ },
+ {
+  "run_id": "rule_fixed",
+  "algorithm": "rule_fixed",
+  "seed": 1,
+  "test_mean": 711.7468772500138,
+  "genome_file": "results/main/genomes/rule_fixed/seed_1.json"
+ },
+ {
+  "run_id": "rule_fixed",
+  "algorithm": "rule_fixed",
+  "seed": 2,
+  "test_mean": 571.3579070000086,
+  "genome_file": "results/main/genomes/rule_fixed/seed_2.json"
+ },
+ {
+  "run_id": "rule_fixed",
+  "algorithm": "rule_fixed",
+  "seed": 3,
+  "test_mean": 711.7468772500138,
+  "genome_file": "results/main/genomes/rule_fixed/seed_3.json"
+ },
+ {
+  "run_id": "rule_fixed",
+  "algorithm": "rule_fixed",
+  "seed": 4,
+  "test_mean": 711.7468772500138,
+  "genome_file": "results/main/genomes/rule_fixed/seed_4.json"
+ },
+ {
+  "run_id": "rule_fixed",
+  "algorithm": "rule_fixed",
+  "seed": 5,
+  "test_mean": 711.7468772500138,
+  "genome_file": "results/main/genomes/rule_fixed/seed_5.json"
+ },
+ {
+  "run_id": "rule_fixed",
+  "algorithm": "rule_fixed",
+  "seed": 6,
+  "test_mean": 571.3579070000086,
+  "genome_file": "results/main/genomes/rule_fixed/seed_6.json"
+ },
+ {
+  "run_id": "rule_fixed",
+  "algorithm": "rule_fixed",
+  "seed": 7,
+  "test_mean": 711.7468772500138,
+  "genome_file": "results/main/genomes/rule_fixed/seed_7.json"
+ },
+ {
+  "run_id": "rule_fixed",
+  "algorithm": "rule_fixed",
+  "seed": 8,
+  "test_mean": 711.7468772500138,
+  "genome_file": "results/main/genomes/rule_fixed/seed_8.json"
+ },
+ {
+  "run_id": "rule_fixed",
+  "algorithm": "rule_fixed",
+  "seed": 9,
+  "test_mean": 711.7468772500138,
+  "genome_file": "results/main/genomes/rule_fixed/seed_9.json"
+ },
+ {
+  "run_id": "rule_scaled",
+  "algorithm": "rule_scaled",
+  "seed": 0,
+  "test_mean": 3202.4945614999533,
+  "genome_file": "results/main/genomes/rule_scaled/seed_0.json"
+ },
+ {
+  "run_id": "rule_scaled",
+  "algorithm": "rule_scaled",
+  "seed": 1,
+  "test_mean": 3202.4945614999533,
+  "genome_file": "results/main/genomes/rule_scaled/seed_1.json"
+ },
+ {
+  "run_id": "rule_scaled",
+  "algorithm": "rule_scaled",
+  "seed": 2,
+  "test_mean": 3202.4945614999533,
+  "genome_file": "results/main/genomes/rule_scaled/seed_2.json"
+ },
+ {
+  "run_id": "rule_scaled",
+  "algorithm": "rule_scaled",
+  "seed": 3,
+  "test_mean": 3202.4945614999533,
+  "genome_file": "results/main/genomes/rule_scaled/seed_3.json"
+ },
+ {
+  "run_id": "rule_scaled",
+  "algorithm": "rule_scaled",
+  "seed": 4,
+  "test_mean": 3202.4945614999533,
+  "genome_file": "results/main/genomes/rule_scaled/seed_4.json"
+ },
+ {
+  "run_id": "rule_scaled",
+  "algorithm": "rule_scaled",
+  "seed": 5,
+  "test_mean": 2957.892851249967,
+  "genome_file": "results/main/genomes/rule_scaled/seed_5.json"
+ },
+ {
+  "run_id": "rule_scaled",
+  "algorithm": "rule_scaled",
+  "seed": 6,
+  "test_mean": 3202.4945614999533,
+  "genome_file": "results/main/genomes/rule_scaled/seed_6.json"
+ },
+ {
+  "run_id": "rule_scaled",
+  "algorithm": "rule_scaled",
+  "seed": 7,
+  "test_mean": 3202.4945614999533,
+  "genome_file": "results/main/genomes/rule_scaled/seed_7.json"
+ },
+ {
+  "run_id": "rule_scaled",
+  "algorithm": "rule_scaled",
+  "seed": 8,
+  "test_mean": 3202.4945614999533,
+  "genome_file": "results/main/genomes/rule_scaled/seed_8.json"
+ },
+ {
+  "run_id": "rule_scaled",
+  "algorithm": "rule_scaled",
+  "seed": 9,
+  "test_mean": 3202.4945614999533,
+  "genome_file": "results/main/genomes/rule_scaled/seed_9.json"
+ }
+]

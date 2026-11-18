@@ -1,0 +1,53 @@
+[project]
+name = "dino-neuroevolution"
+version = "0.1.0"
+description = "Neuroevolution for a Chrome-Dino-style game: deterministic simulation, algorithms, experiments."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "numpy>=2.0",
+  "pyyaml>=6",
+  "cma>=4.0",
+  "neat-python>=1.0",
+  "gymnasium>=1.0",
+  "stable-baselines3>=2.4",
+  "torch>=2.4",
+]
+
+[dependency-groups]
+dev = [
+    "pillow>=13.0.0",
+    "pytest>=8",
+    "ruff>=0.6",
+]
+
+[tool.uv]
+package = false
+
+# CPU-only PyTorch. The default Linux wheel bundles CUDA libraries (over 2 GB), which CI and
+# most laptops do not need for a 64x64 policy network.
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["sim/tests"]
+filterwarnings = ["ignore:Could not import matplotlib:UserWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C4", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+# SVG markup and generated-figure tests read better as long lines than as wrapped strings.
+"sim/figures/*.py" = ["E501"]
+"sim/analysis/*.py" = ["E501"]
+"sim/tests/test_figures.py" = ["E501"]
