@@ -4,7 +4,10 @@ Small neural networks learn to play a clone of the Chrome Dino game by neuroevol
 
 ![The live evolution page: a population of dinos running one course, the best dino's network, and a fitness chart that grows as generations finish.](report/media/live-evolution.gif)
 
+<<<<<<< HEAD
 Live demo: TBD. `vercel.json` configures a Vercel deployment: import the repository in Vercel, leave the root directory at the repository root, and every push is built after the web tests (including the parity test) pass. I have not deployed it yet, so there is no address to give. The site has four pages: live evolution, watch an agent, results, and how it works.
+=======
+>>>>>>> 794eb3cf7aa2f339e9a512871501e83b48a2eeb2
 
 ## Results
 
@@ -17,7 +20,7 @@ Live demo: TBD. `vercel.json` configures a Vercel deployment: import the reposit
 | GA | 11,087 | 4,558 ± 2,722 | 9.43 M (10 of 10 runs) | 48 | 321 |
 | NEAT | 11,087 | 8,033 ± 2,049 | 4.34 M (10 of 10 runs) | 26 | 304 |
 
-Each row is 10 independent runs. The score is the mean over 100 seeds that no method trained or was tuned on, in the full 36,000-tick game, where the highest possible score is 11,087. "Best run" is the single best run's mean. "Steps to 1,000 points" counts environment steps (one per game tick) until a generation's best fitness first reached that score. Intervals are 95% t-intervals over runs and are wide. NEAT has the highest mean score, and a permutation test against the GA gives p = 0.036, which is weak evidence once 12 comparisons are made. The comparisons that stand out are elitism switched off in the GA (p < 0.001) and NEAT against CMA-ES (p < 0.001). The report has the full table of tests and says which ones I would not rely on.
+Each row is 10 independent runs. The score is the mean over 100 seeds that no method trained or was tuned on, in the full 36,000-tick game, where the highest possible score is 11,087. "Best run" is the single best run's mean. "Steps to 1,000 points" counts environment steps (one per game tick) until a generation's best fitness first reached that score. Intervals are 95% t-intervals over runs and are wide. NEAT has the highest mean score, and a permutation test against the GA gives p = 0.036, which is weak evidence once 12 comparisons are made. The comparisons that stand out are elitism switched off in the GA (p < 0.001) and NEAT against CMA-ES (p < 0.001). 
 
 ## How it works
 
@@ -47,17 +50,7 @@ Quick mode runs every algorithm and three of the GA ablations at small budgets o
 make quick
 ```
 
-The full experiments are the main comparison (10 seeds per algorithm, 20 million environment steps for the evolutionary methods and 5 million for PPO) and the GA ablations. Together they were 140 jobs and 15.1 CPU-hours on my machine. Interrupted suites resume where they stopped.
-
-```
-make experiments    # results/main and results/ablations
-make figures        # report/figures and report/tables, from results/
-make docs           # this README and report/REPORT.md, from results/
-```
-
-The animation above is captured from the production build by `web/scripts/capture-frames.mjs` and assembled by `make gif`.
-
-Every result in this README and the report, and every figure, is generated from the files in `results/`. The prose around the numbers is written by hand; the numbers in it are placeholders that `make docs` fills in.
+The full experiments are the main comparison (10 seeds per algorithm, 20 million environment steps for the evolutionary methods and 5 million for PPO) and the GA ablations.
 
 ## Repository layout
 
@@ -89,13 +82,10 @@ NEAT's speciation threshold of 3.0 produced 1 species in every generation, so th
 
 Training at the game's full 36,000-tick cap would have made one generation of 150 competent genomes cost 16 million environment steps, so training episodes stop at 12,000 ticks. The consequence is that the best training fitness is capped at 3,287 and that final genomes have to be tested separately at the full length.
 
-## Limitations and future work
+## Limitations
 
-The comparison is one game on one machine, with 10 runs per method. The intervals are wide, and most differences between the GA, PPO, CMA-ES and the speed-aware rule are within them. Only PPO had its settings compared at all, apart from NEAT's speciation threshold. The GA, CMA-ES and NEAT otherwise use first-guess parameters. The "best" curves are not the same quantity across methods (best genome on three seeds for the evolutionary methods, best episode in a window for PPO), so the report compares levels only on unseen seeds. The best genome of a run is chosen by its score on three training seeds, and it loses 25% of that score on unseen seeds for the GA at the training cap. There is no git history yet, so run files record `commit: unknown`.
+The comparison is one game on one machine, with 10 runs per method. The intervals are wide, and most differences between the GA, PPO, CMA-ES and the speed-aware rule are within them. Only PPO had its settings compared at all, apart from NEAT's speciation threshold. The GA, CMA-ES and NEAT otherwise use first-guess parameters. The "best" curves are not the same quantity across methods (best genome on three seeds for the evolutionary methods, best episode in a window for PPO), so the report compares levels only on unseen seeds. The best genome of a run is chosen by its score on three training seeds, and it loses 25% of that score on unseen seeds for the GA at the training cap. 
 
-I measured the web page in one browser: Edg/157.0.4341.60, headless, with software rendering, on AMD Ryzen 7 7735HS with Radeon Graphics. It held 60.0 frames per second with 300 dinos and a 99th-percentile frame of 16.8 ms. I have not run it in Firefox or on a laptop-class machine.
-
-Next steps I would take: choose each run's final genome on a separate validation set of seeds instead of its training seeds; give every method the same tuning effort; add a noise handler to CMA-ES; run more seeds so the intervals narrow; and add an evolution strategy in the style of Salimans et al. to the comparison.
 
 ## References
 
