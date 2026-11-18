@@ -77,7 +77,7 @@ NEAT's speciation threshold of 3.0 produced 1 species in every generation, so th
 
 Training at the game's full 36,000-tick cap would have made one generation of 150 competent genomes cost 16 million environment steps, so training episodes stop at 12,000 ticks. The consequence is that the best training fitness is capped at 3,287 and that final genomes have to be tested separately at the full length.
 
-## Limitations
+## Limitations and future work
 
 The comparison is one game on one machine, with 10 runs per method. The intervals are wide, and most differences between the GA, PPO, CMA-ES and the speed-aware rule are within them. Only PPO had its settings compared at all, apart from NEAT's speciation threshold. The GA, CMA-ES and NEAT otherwise use first-guess parameters. The "best" curves are not the same quantity across methods (best genome on three seeds for the evolutionary methods, best episode in a window for PPO), so the report compares levels only on unseen seeds. The best genome of a run is chosen by its score on three training seeds, and it loses 25% of that score on unseen seeds for the GA at the training cap. 
 
