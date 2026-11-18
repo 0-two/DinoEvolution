@@ -1,5 +1,5 @@
 # Targets for the Python side, then the web app.
-.PHONY: setup lint test parity bench baseline quick experiments figures docs dead-ends gif web-setup web-check web-parity web-dev web-perf
+.PHONY: setup lint test test-docs parity bench baseline quick experiments figures docs dead-ends gif web-setup web-check web-parity web-dev web-perf
 
 setup:
 	uv sync
@@ -8,8 +8,13 @@ lint:
 	uv run ruff check .
 	uv run ruff format --check .
 
+# Code tests, the same set CI runs. The documentation checks are separate: `make test-docs`.
 test:
-	uv run pytest -q
+	uv run pytest -q --ignore=sim/tests/test_docs.py
+
+# Style, link and placeholder checks on the README and report (not run by CI).
+test-docs:
+	uv run pytest -q sim/tests/test_docs.py
 
 # Replays the stored golden traces against the Python game. The web test replays the same file.
 parity:

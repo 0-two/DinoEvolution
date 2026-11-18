@@ -13,7 +13,8 @@ jobs:
       - run: uv sync
       - run: uv run ruff check .
       - run: uv run ruff format --check .
-      - run: uv run pytest -q
+      # Code only. The documentation checks (sim/tests/test_docs.py) are not part of CI.
+      - run: uv run pytest -q --ignore=sim/tests/test_docs.py
       - run: uv run python -m sim.parity check
 
   web:
