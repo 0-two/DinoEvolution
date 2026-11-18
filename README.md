@@ -4,7 +4,7 @@ Small neural networks learn to play a clone of the Chrome Dino game by neuroevol
 
 ![The live evolution page: a population of dinos running one course, the best dino's network, and a fitness chart that grows as generations finish.](report/media/live-evolution.gif)
 
-Live demo: TBD. The workflow in `.github/workflows/pages.yml` builds the web app and publishes it to GitHub Pages once this repository is pushed to GitHub and Pages is switched to "GitHub Actions". I have not pushed it, so there is no address to give yet. The site has four pages: live evolution, watch an agent, results, and how it works.
+Live demo: TBD. `vercel.json` configures a Vercel deployment: import the repository in Vercel, leave the root directory at the repository root, and every push is built after the web tests (including the parity test) pass. I have not deployed it yet, so there is no address to give. The site has four pages: live evolution, watch an agent, results, and how it works.
 
 ## Results
 
