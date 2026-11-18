@@ -4,11 +4,6 @@ Small neural networks learn to play a clone of the Chrome Dino game by neuroevol
 
 ![The live evolution page: a population of dinos running one course, the best dino's network, and a fitness chart that grows as generations finish.](report/media/live-evolution.gif)
 
-<<<<<<< HEAD
-Live demo: TBD. `vercel.json` configures a Vercel deployment: import the repository in Vercel, leave the root directory at the repository root, and every push is built after the web tests (including the parity test) pass. I have not deployed it yet, so there is no address to give. The site has four pages: live evolution, watch an agent, results, and how it works.
-=======
->>>>>>> 794eb3cf7aa2f339e9a512871501e83b48a2eeb2
-
 ## Results
 
 | Algorithm | Best run | Mean ± 95% CI | Steps to 1,000 points | Generations | Wall-clock per run (s) |
